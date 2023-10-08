@@ -76,3 +76,21 @@ body {
     color: darkolivegreen;
 }
 
+#video-container {
+    text-align: center;
+}
+
+#video {
+    width: 640px;
+    height: 360px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

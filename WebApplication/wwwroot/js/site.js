@@ -10,3 +10,19 @@ function newColor() {
 function oldColor() {
     document.getElementById("hello_world").style.color = "darkolivegreen";
 }
+
+const video = document.getElementById("video");
+const animateButton = document.getElementById("animate-button");
+
+function animateVideo() {
+    let rotation = 0;
+    const interval = setInterval(() => {
+        rotation += 5;
+        video.style.transform = `rotate(${rotation}deg)`;
+        if (rotation >= 360) {
+            clearInterval(interval);
+        }
+    }, 50);
+}
+
+animateButton.addEventListener("click", animateVideo);
